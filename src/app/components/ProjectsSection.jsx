@@ -41,7 +41,7 @@ const projectsData = [
     image: '/images/projects/blackjackArduino.png',
     tag: ['All', 'Web'],
     previewUrl: 'src/app/components/ProjectDetails4.jsx',
-  },
+  }
 ];
 
 const ProjectsSection = () => {
