@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-# testing coverage
+# testing coverage folder
 /coverage
 
 # next.js
