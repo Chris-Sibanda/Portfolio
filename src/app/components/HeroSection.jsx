@@ -77,31 +77,17 @@ return (
           </ul>
         </section>
         <div>
-          {/* <a
+          <a
             href={cvFilePath}
             download
-            className="px-1 inline-block py-1 sm:border-5 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-4 my-4"
+            className="px-1 text-white inline-block py-1 sm:border-5 rounded-full bg-gradient-to-br from-blue-500 via-cyan-500 to-green-500 p-[2px] transition-all duration-300 my-4"
           >
             <div className="flex justify-center items-center">
-              <button className="bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <button className="bg-[#121212]  hover:bg-gradient-to-br hover:from-blue-500 hover:via-cyan-500 hover:to-green-500 hover:border-black hover:text-white rounded-full px-5 py-2 transition-all duration-300">
                 Download CV
               </button>
             </div>
-          </a> */}
-          {/* relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg */}
-          <a
-  href={cvFilePath}
-  download
-  className="px-1 inline-block py-1 sm:border-5 rounded-full bg-gradient-to-br from-blue-500 via-cyan-500 to-green-500 p-[2px] text-white hover:bg-[#121212] hover:border-gradient-to-br hover:border-4 hover:border-transparent hover:from-blue-500 hover:via-cyan-500 hover:to-green-500 mt-4 my-4"
->
-  <div className="flex justify-center items-center">
-    <button className="bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-white">
-      Download CV
-    </button>
-  </div>
-</a>
-
-
+          </a>
         </div>
       </motion.div>
     </div>
