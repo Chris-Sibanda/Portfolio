@@ -1,6 +1,5 @@
 'use client';
 import React, { useTransition, useState } from 'react';
-import Image from 'next/image';
 import TabButton from './TabButton';
 import { motion, useAnimation } from 'framer-motion';
 
@@ -11,20 +10,6 @@ const TAB_DATA = [
     content: (
       <>
         <ul className="pl-2 flex flex-wrap bg-black justify-center md:justify-start gap-6 border-2 border-gray-700 mt-4 p-4 rounded-lg">
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">C++</span>
-          </motion.li>
-
           <motion.li
             whileHover={{
               y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
@@ -48,7 +33,8 @@ const TAB_DATA = [
               ease: 'linear',
               loop: Infinity,
             }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg">
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
             <span className="relative z-10">Embedded Systems</span>
           </motion.li>
 
@@ -61,8 +47,7 @@ const TAB_DATA = [
               ease: 'linear',
               loop: Infinity,
             }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg"
-          >
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg">
             <span className="relative z-10">Software Engineering</span>
           </motion.li>
 
@@ -78,6 +63,20 @@ const TAB_DATA = [
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg"
           >
             <span className="relative z-10">Artificial Intelligence</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10"></span>
           </motion.li>
 
           <motion.li
@@ -130,7 +129,7 @@ const TAB_DATA = [
               loop: Infinity,
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
-            <span className="relative z-10">C++</span>
+            <span className="relative z-10">Leadership</span>
           </motion.li>
 
           <motion.li
@@ -737,8 +736,8 @@ const TAB_DATA = [
     id: 'education',
     content: (
       <>
-        <div className="p-4 rounded-lg bg-gradient-to-r from-blue-500 via-cyan-500 to-green-500 text-white">
-          <h2 className="text-2xl font-bold mb-4 text-center">Education</h2>
+        <div className="p-4 my-4 rounded-lg bg-gradient-to-r from-blue-500 via-cyan-500 to-green-500 text-white">
+          <h2 className="text-2xl font-bold mb-4 text-start">Education</h2>
           <ul className="list-none text-base lg:text-lg px-4 py-2 bg-white rounded-lg shadow-lg text-gray-800">
             <li className="mb-6">
               <span style={{ color: 'green' }}>&#10036;</span>
@@ -765,12 +764,12 @@ const TAB_DATA = [
     ),
   },
   {
-    title: 'Employment Experience',
-    id: 'employment experience',
+    title: 'Employment History',
+    id: 'employment history',
     content: (
       <>
-        <div className="p-4 rounded-lg bg-gradient-to-r from-blue-500 via-cyan-500 to-green-500 text-white">
-    <h2 className="text-2xl font-bold mb-4 text-center">Employment History</h2>
+        <div className="p-4 my-4 rounded-lg bg-gradient-to-r from-blue-500 via-cyan-500 to-green-500 text-white">
+    <h2 className="text-2xl font-bold mb-4 text-start">Employment History</h2>
     <ul className="list-none text-base lg:text-lg px-4 py-2 bg-white rounded-lg shadow-lg text-gray-800">
       <li className="mb-6">
         <span style={{ color: 'green' }}>&#10036;</span>
@@ -829,29 +828,29 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="py-1 lg:py-4 pb-0 lg:pb-0 m-0 bg-gray-100 p-6 rounded-2xl shadow-lg my-8">
-      <h2 className="text-start font-bold text-white mt-4 mb-4 text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-blue-500 via-cyan-500 to-green-500 p-4 rounded-lg shadow-lg">
+    <section className="py-1 lg:py-4 pb-0 lg:pb-0 m-0 bg-white p-6 rounded-2xl shadow-lg my-8">
+      <h2 className="text-start font-bold text-gray-700 mt-4 mb-4 text-2xl md:text-3xl lg:text-4xl bg-white">
         About Me
       </h2>
-      <div className="p-4 rounded-lg bg-gradient-to-r from-blue-500 via-cyan-500 to-green-500 text-white">
-        <p className="text-base lg:text-lg opacity-90 leading-relaxed mb-4">
+      <div className="p-4 rounded-lg bg-white text-gray-700">
+        <p className="text-black lg:text-lg opacity-90 leading-relaxed mb-4">
           Hi, I’m a third-year student at Maynooth University pursuing a BSc in Robotics and Intelligent Devices, expected to graduate in September 2026. With a strong foundation in software engineering, AI, and robotics, I’ve cultivated skills in programming (Python, Java, C++, and C), system modeling, and hands-on robotics projects using ROS and RX200 robot systems.
         </p>
-        <p className="text-base lg:text-lg opacity-90 leading-relaxed mb-4">
+        <p className="text-black lg:text-lg opacity-90 leading-relaxed mb-4">
           I’m particularly drawn to the intersection of technology and healthcare, with a keen interest in prosthetics and assistive devices. I aim to use my skills to develop intelligent solutions that enhance human mobility and quality of life.
         </p>
-        <p className="text-base lg:text-lg opacity-90 leading-relaxed mb-4">
+        <p className="text-black lg:text-lg opacity-90 leading-relaxed mb-4">
           At university, I’ve taken on leadership roles such as being a Student Representative for my second year, and I am an active participant in societies, including Powerlifting, Muay Thai, Films, and the Engineering & Robotics Societies. Additionally, I serve as the Treasurer for the Muay Thai Society.
         </p>
-        <p className="text-base lg:text-lg opacity-90 leading-relaxed mb-4">
+        <p className="text-black lg:text-lg opacity-90 leading-relaxed mb-4">
           During secondary school, I trained, coached, and refereed Volleyball while also playing Football, Gaelic Football, Handball, and Rugby. I earned recognition as the Junior Certificate Student of the Year and was a winner of the 2019 Anti-litter Cinema Advert Competition.
         </p>
-        <p className="text-base lg:text-lg opacity-90 leading-relaxed">
+        <p id="skills" className="text-black lg:text-lg opacity-90 leading-relaxed">
           Outside of academics, I have a passion for powerlifting, Muay Thai, and watching Formula 1. I also enjoy exploring new technologies, films, and engaging in creative pursuits that inspire my work in robotics and design. I look forward to connecting and embarking on a journey of transformative design and engineering together.
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-start mt-8 text-xl md:text-3xl lg:text-3xl font-bold">
+      <div id="employment-history-section" className="flex flex-col sm:flex-row justify-start mt-8 text-xl md:text-3xl lg:text-3xl font-bold">
         <TabButton
           selectTab={() => handleTabChange('skills')}
           active={tab === 'skills'}
@@ -867,15 +866,15 @@ const AboutSection = () => {
           Education{' '}
         </TabButton>
         <TabButton
-          selectTab={() => handleTabChange('employment experience')}
-          active={tab === 'employment experience'}
+          selectTab={() => handleTabChange('employment history')}
+          active={tab === 'employment history'}
         >
           {' '}
-          Employment Experience{' '}
+          Employment History{' '}
         </TabButton>
       </div>
 
-      <div className="m-8 pb-8">
+      <div className="m-0 pb-6">
         {TAB_DATA.find((t) => t.id === tab).content}
       </div>
     </section>
