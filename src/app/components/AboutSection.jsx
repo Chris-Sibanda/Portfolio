@@ -10,7 +10,8 @@ const TAB_DATA = [
     content: (
       <>
         <ul className="pl-2 flex flex-wrap bg-black justify-center md:justify-start gap-6 border-2 border-gray-700 mt-4 p-4 rounded-lg">
-          <motion.li
+
+        <motion.li
             whileHover={{
               y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
             }}
@@ -21,7 +22,9 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Robotics</span>
+            <span className="relative z-10">
+            Prioritization & Organization
+            </span>
           </motion.li>
 
           <motion.li
@@ -35,7 +38,7 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Embedded Systems</span>
+            <span className="relative z-10">Robotics & Automation</span>
           </motion.li>
 
           <motion.li
@@ -47,7 +50,8 @@ const TAB_DATA = [
               ease: 'linear',
               loop: Infinity,
             }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg">
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
             <span className="relative z-10">Software Engineering</span>
           </motion.li>
 
@@ -60,9 +64,8 @@ const TAB_DATA = [
               ease: 'linear',
               loop: Infinity,
             }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Artificial Intelligence</span>
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg">
+            <span className="relative z-10">Intelligent Systems</span>
           </motion.li>
 
           <motion.li
@@ -76,7 +79,21 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10"></span>
+            <span className="relative z-10">Mechatronics</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800  animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Operating Systems</span>
           </motion.li>
 
           <motion.li
@@ -90,61 +107,35 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Machine Learning</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Control Systems</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
-            <span className="relative z-10">Python</span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
-            <span className="relative z-10">Leadership</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
             <span className="relative z-10">Java</span>
           </motion.li>
 
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">C++</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
+            <span className="relative z-10">Python & Javascript</span>
+          </motion.li>
           <motion.li
             whileHover={{
               y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
@@ -168,7 +159,33 @@ const TAB_DATA = [
               loop: Infinity,
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
-            <span className="relative z-10">Usability Testing</span>
+            <span className="relative z-10">Next.js & React</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
+            <span className="relative z-10">Tailwind & CSS4</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
+            <span className="relative z-10">Embedded Systems & Robotics</span>
           </motion.li>
 
           <motion.li
@@ -194,7 +211,7 @@ const TAB_DATA = [
               loop: Infinity,
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
-            <span className="relative z-10">Object Detection</span>
+            <span className="relative z-10">RX200 Robot</span>
           </motion.li>
 
           <motion.li
@@ -207,7 +224,7 @@ const TAB_DATA = [
               loop: Infinity,
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
-            <span className="relative z-10">YOLO v5</span>
+            <span className="relative z-10">Arduino</span>
           </motion.li>
 
           <motion.li
@@ -220,7 +237,7 @@ const TAB_DATA = [
               loop: Infinity,
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 nimate-shine border-4 rounded-lg">
-            <span className="relative z-10">AI Camera Integration</span>
+            <span className="relative z-10"> AI & Machine Learning</span>
           </motion.li>
 
           <motion.li
@@ -233,7 +250,7 @@ const TAB_DATA = [
               loop: Infinity,
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg">
-            Deep Learning
+            AI Powered Solutions
           </motion.li>
 
           <motion.li
@@ -247,7 +264,7 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Real-Time Systems</span>
+            <span className="relative z-10">Deep Learning Model Trainings</span>
           </motion.li>
 
           <motion.li
@@ -261,7 +278,7 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Signal Processing</span>
+            <span className="relative z-10">YOLO V5 Object Detection</span>
           </motion.li>
 
           <motion.li
@@ -275,7 +292,7 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Algorithms</span>
+            <span className="relative z-10">Computer Vision</span>
           </motion.li>
 
           <motion.li
@@ -289,7 +306,35 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Data Structures</span>
+            <span className="relative z-10">Mathematical & Algorithmic Thinking</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Control Systems</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Simulation & Modeling</span>
           </motion.li>
 
           <motion.li
@@ -329,93 +374,9 @@ const TAB_DATA = [
               ease: 'linear',
               loop: Infinity,
             }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">System Modeling</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Problem Solving</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 nimate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Critical Thinking</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Automation</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Robotics Automation</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">System Stability Analysis</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Art Direction</span>
+            <span className="relative z-10">SolidWorks (CAD)</span>
           </motion.li>
 
           <motion.li
@@ -443,20 +404,6 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Prototyping</span>
-          </motion.li>
-
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
             <span className="relative z-10">Robot Arm Control</span>
           </motion.li>
 
@@ -471,7 +418,7 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Intelligent Systems</span>
+            <span className="relative z-10">System Stability Analysis</span>
           </motion.li>
 
           <motion.li
@@ -485,7 +432,7 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10"> Shopify & Wix Development</span>
+            <span className="relative z-10">Real-Time Object Detection</span>
           </motion.li>
 
           <motion.li
@@ -499,7 +446,23 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Embedded Software Development</span>
+            <span className="relative z-10">Data Analysis</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">
+            Autonomous Systems
+            </span>
           </motion.li>
 
           <motion.li
@@ -527,176 +490,9 @@ const TAB_DATA = [
             }}
             className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
           >
-            <span className="relative z-10">Windows OS</span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Data Analysis</span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">AI-powered Solutions</span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
             <span className="relative z-10">Object Detection Algorithms</span>
           </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Coordinate Generation</span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Real-Time Object Detection</span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">Software Development</span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">
-            Hands-on Robotics Projects
-            </span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">
-            Collaborative Work
-            </span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">
-            CAD Software (SolidWorks)
-            </span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">
-            Embedded Programming
-            </span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">
-            Sensor Integration
-            </span>
-          </motion.li>
-          <motion.li
-            whileHover={{
-              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              loop: Infinity,
-            }}
-            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
-          >
-            <span className="relative z-10">
-            Autonomous Systems
-            </span>
-          </motion.li>
+
           <motion.li
             whileHover={{
               y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
@@ -712,6 +508,109 @@ const TAB_DATA = [
             Test and Debugging
             </span>
           </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10"> Fully Responsive UI (Mobile & Desktop) Development</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">UI & UX</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Framer Motion Animations</span>
+          </motion.li>
+
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Dynamic Type Animations (TypeAnimation)</span>
+          </motion.li>
+
+
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Prototyping</span>
+          </motion.li>
+
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Communication</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Collaboration</span>
+          </motion.li>
+
           <motion.li
             whileHover={{
               y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
@@ -726,6 +625,50 @@ const TAB_DATA = [
             <span className="relative z-10">
             Customer-Centric Solutions
             </span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">
+            Customer Care
+            </span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Innovation</span>
+          </motion.li>
+
+          <motion.li
+            whileHover={{
+              y: [-2, 2, -2, 2, -1.5, 1.5, -0.5, 0.5, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: 'linear',
+              loop: Infinity,
+            }}
+            className="relative group text-center text-white px-2 py-2 bg-gradient-to-r from-blue-500 via-cyan-800 animate-shine border-4 rounded-lg"
+          >
+            <span className="relative z-10">Leadership</span>
           </motion.li>
         </ul>
       </>
